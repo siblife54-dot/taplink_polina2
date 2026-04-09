@@ -1,0 +1,322 @@
+:root {
+  --bg: #07070d;
+  --pink: #ff0b9d;
+  --pink-soft: #ff5cbc;
+  --card: #16161f;
+  --text: #ffffff;
+  --muted: #d0d0d7;
+  --cream: #ffe9a6;
+  --cream-deep: #f4cf77;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  background: radial-gradient(circle at 20% 10%, #2a0638 0%, var(--bg) 45%);
+  color: var(--text);
+}
+
+.page-shell {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.mobile-page {
+  width: 100%;
+  max-width: 430px;
+  background:
+    radial-gradient(circle at 90% 0%, #ff0b9d 0 33%, transparent 35%),
+    radial-gradient(circle at 0% 25%, #ff0b9d 0 34%, transparent 35%),
+    radial-gradient(circle at 35% 10%, rgba(255, 255, 255, 0.28) 1px, transparent 1px),
+    radial-gradient(circle at 80% 40%, rgba(255, 255, 255, 0.3) 1px, transparent 1px),
+    radial-gradient(circle at 10% 85%, rgba(255, 255, 255, 0.22) 1px, transparent 1px),
+    var(--bg);
+  background-size: auto, auto, 120px 120px, 140px 140px, 100px 100px, auto;
+  padding: 24px 16px 56px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mobile-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 50% -10%, rgba(255, 5, 147, 0.55), transparent 48%);
+}
+
+section {
+  position: relative;
+  z-index: 1;
+}
+
+.social-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.handle {
+  font-size: 35px;
+  font-family: Oswald, sans-serif;
+  line-height: 1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: Oswald, sans-serif;
+  line-height: 0.95;
+  letter-spacing: 0.3px;
+}
+
+.hero h1 {
+  font-size: clamp(40px, 11.5vw, 56px);
+  margin: 8px 0 20px;
+}
+
+.hero h1 strong {
+  display: block;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
+}
+
+.poster-card {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 18px 16px 20px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.06)),
+    #07070d;
+  box-shadow: 0 18px 28px rgba(0, 0, 0, 0.55), 0 0 32px rgba(255, 6, 151, 0.22);
+}
+
+.poster-badges {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.poster-badges span {
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(255, 100, 180, 0.5);
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.poster-badges b {
+  display: block;
+  color: var(--pink-soft);
+  text-transform: uppercase;
+}
+
+.poster-badges small {
+  color: #d6d7de;
+}
+
+.poster-card h2 {
+  font-size: 78px;
+  margin: 12px 0;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 14px;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  margin-bottom: 14px;
+}
+
+.poster-copy {
+  background: linear-gradient(130deg, #3f1e37, #211f2c);
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0 0 16px;
+  font-size: 15px;
+}
+
+mark {
+  background: transparent;
+  color: var(--pink-soft);
+  font-weight: 700;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 999px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 15px 16px;
+}
+
+.btn-primary,
+.btn-cream {
+  color: #282415;
+  background: linear-gradient(180deg, #fff1c9 0%, var(--cream-deep) 100%);
+  box-shadow: 0 8px 20px rgba(255, 220, 122, 0.32);
+}
+
+.audience,
+.learn,
+.pricing,
+.care {
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 52px;
+  margin-bottom: 16px;
+}
+
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.audience-card {
+  border-radius: 14px;
+  padding: 12px;
+  background: linear-gradient(180deg, #181824, #0d0d13);
+  border: 1px solid rgba(255, 70, 166, 0.45);
+  box-shadow: inset 0 -8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.emoji {
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+.audience-card h4 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.audience-card p {
+  margin: 0;
+  font-size: 13px;
+  color: #d8d8e0;
+}
+
+.clipboard {
+  background: linear-gradient(180deg, #ff57ba, #e13ea6);
+  border-radius: 20px;
+  padding: 18px 14px 14px;
+  position: relative;
+}
+
+.clip {
+  width: 80px;
+  height: 12px;
+  border-radius: 8px;
+  background: #d6d6d6;
+  margin: 0 auto 14px;
+  border: 2px solid #8c8c8c;
+}
+
+.clipboard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.clipboard li {
+  background: #f7f7fa;
+  color: #1b1b22;
+  border-radius: 9px;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.pricing h3,
+.care h3,
+.learn h3 {
+  text-align: center;
+}
+
+.price-card {
+  border-radius: 20px;
+  padding: 18px 14px;
+  margin-bottom: 14px;
+}
+
+.dark-card {
+  background: #2a2b30;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.light-card {
+  background: #f2f2f2;
+  color: #18191f;
+}
+
+.price-card h4 {
+  font-size: 52px;
+  margin-bottom: 10px;
+}
+
+.price-card ol {
+  margin: 0 0 12px 18px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.old-price {
+  margin: 0;
+  text-decoration: line-through;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.new-price {
+  margin: 4px 0 14px;
+  text-align: center;
+  font-size: 40px;
+  font-family: Oswald, sans-serif;
+}
+
+.btn-pink {
+  margin-bottom: 8px;
+  color: #fff;
+  background: linear-gradient(100deg, #f5bde2, #ff3fb0);
+}
+
+.care .btn {
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+@media (max-width: 360px) {
+  h3,
+  .price-card h4 {
+    font-size: 44px;
+  }
+
+  .poster-card h2 {
+    font-size: 64px;
+  }
+}
