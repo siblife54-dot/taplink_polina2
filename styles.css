@@ -34,44 +34,15 @@ body {
 .mobile-page {
   width: 100%;
   max-width: 430px;
-  background:
-    radial-gradient(circle at 90% 0%, #ff0b9d 0 33%, transparent 35%),
-    radial-gradient(circle at 0% 25%, #ff0b9d 0 34%, transparent 35%),
-    radial-gradient(circle at 35% 10%, rgba(255, 255, 255, 0.28) 1px, transparent 1px),
-    radial-gradient(circle at 80% 40%, rgba(255, 255, 255, 0.3) 1px, transparent 1px),
-    radial-gradient(circle at 10% 85%, rgba(255, 255, 255, 0.22) 1px, transparent 1px),
-    var(--bg);
-  background-size: auto, auto, 120px 120px, 140px 140px, 100px 100px, auto;
+  background: var(--bg);
   padding: 24px 16px 56px;
   position: relative;
   overflow: hidden;
 }
 
-.mobile-page::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: radial-gradient(circle at 50% -10%, rgba(255, 5, 147, 0.55), transparent 48%);
-}
-
 section {
   position: relative;
   z-index: 1;
-}
-
-.social-row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 28px;
-  margin-bottom: 16px;
-}
-
-.handle {
-  font-size: 35px;
-  font-family: Oswald, sans-serif;
-  line-height: 1;
 }
 
 h1,
@@ -83,16 +54,6 @@ h4 {
   font-family: Oswald, sans-serif;
   line-height: 0.95;
   letter-spacing: 0.3px;
-}
-
-.hero h1 {
-  font-size: clamp(40px, 11.5vw, 56px);
-  margin: 8px 0 20px;
-}
-
-.hero h1 strong {
-  display: block;
-  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
 }
 
 .poster-card {
