@@ -126,6 +126,10 @@ h4 {
   margin-top: 30px;
 }
 
+.learn {
+  margin-top: 64px;
+}
+
 h3 {
   font-size: 52px;
   margin-bottom: 16px;
@@ -259,6 +263,12 @@ h3 {
 .care h3,
 .learn h3 {
   text-align: center;
+}
+
+.learn h3 {
+  width: min(100%, 400px);
+  margin: 0 auto 16px;
+  text-align: left;
 }
 
 .price-card {
