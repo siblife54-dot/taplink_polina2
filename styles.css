@@ -131,34 +131,32 @@ h3 {
   margin-bottom: 16px;
 }
 
+.audience h3 {
+  margin-bottom: 18px;
+}
+
 .audience-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
 }
 
 .audience-card {
-  border-radius: 14px;
-  padding: 12px;
-  background: linear-gradient(180deg, #181824, #0d0d13);
-  border: 1px solid rgba(255, 70, 166, 0.45);
-  box-shadow: inset 0 -8px 20px rgba(0, 0, 0, 0.25);
-}
-
-.emoji {
-  font-size: 42px;
-  margin-bottom: 8px;
-}
-
-.audience-card h4 {
-  font-size: 26px;
-  margin-bottom: 8px;
-}
-
-.audience-card p {
-  margin: 0;
-  font-size: 13px;
-  color: #d8d8e0;
+  border-radius: 16px;
+  min-height: 98px;
+  padding: 14px 12px;
+  background: linear-gradient(170deg, #1c1c2a 0%, #0d0d14 100%);
+  border: 1px solid rgba(255, 92, 188, 0.5);
+  box-shadow:
+    0 0 0 1px rgba(255, 11, 157, 0.12),
+    0 8px 20px rgba(0, 0, 0, 0.32),
+    inset 0 0 24px rgba(255, 27, 161, 0.08);
+  color: #f7f0fa;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.3;
+  display: flex;
+  align-items: flex-start;
 }
 
 .clipboard {
