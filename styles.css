@@ -20,7 +20,7 @@ html {
 body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, sans-serif;
-  background: linear-gradient(180deg, #07030f 0%, #0b0615 60%, #05030a 100%);
+  background: #000000;
   color: var(--text);
 }
 
@@ -34,7 +34,7 @@ body {
 .mobile-page {
   width: 100%;
   max-width: 430px;
-  background: linear-gradient(180deg, #07030f 0%, #0b0615 60%, #05030a 100%);
+  background: #000000;
   padding: 24px 16px 56px;
   position: relative;
   overflow: hidden;
