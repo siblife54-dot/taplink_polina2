@@ -89,46 +89,26 @@ h4 {
   color: #d6d7de;
 }
 
+.poster-card h2 {
+  font-size: 78px;
+  margin: 12px 0;
+}
+
 .hero-image {
   width: 100%;
   border-radius: 14px;
   display: block;
   border: 1px solid rgba(255, 255, 255, 0.15);
-  height: auto;
-}
-
-.hero-image-wrap {
-  position: relative;
-  margin-top: 12px;
   margin-bottom: 14px;
 }
 
-.hero-label-card {
-  position: absolute;
-  background: rgba(15, 10, 20, 0.88);
-  border: 1px solid rgba(255, 86, 187, 0.75);
-  border-radius: 12px;
-  padding: 8px 10px;
-  color: var(--pink-soft);
-  font-weight: 700;
-  font-size: 13px;
-  box-shadow: 0 0 16px rgba(255, 11, 157, 0.28);
-  backdrop-filter: blur(2px);
-}
-
-.hero-label-top-right {
-  top: 14%;
-  right: -8px;
-}
-
-.hero-label-bottom-left {
-  bottom: 16%;
-  left: -8px;
-}
-
-.hero-label-bottom-right {
-  right: 8px;
-  bottom: 4%;
+.poster-copy {
+  background: linear-gradient(130deg, #3f1e37, #211f2c);
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0 0 16px;
+  font-size: 15px;
 }
 
 mark {
@@ -155,10 +135,6 @@ mark {
   color: #282415;
   background: linear-gradient(180deg, #fff1c9 0%, var(--cream-deep) 100%);
   box-shadow: 0 8px 20px rgba(255, 220, 122, 0.32);
-}
-
-.poster-card .btn-primary {
-  margin-top: 0;
 }
 
 .audience,
@@ -301,20 +277,7 @@ h3 {
     font-size: 44px;
   }
 
-  .hero-label-card {
-    font-size: 12px;
-    padding: 7px 9px;
-  }
-
-  .hero-label-top-right {
-    right: 4px;
-  }
-
-  .hero-label-bottom-left {
-    left: 4px;
-  }
-
-  .hero-label-bottom-right {
-    right: 4px;
+  .poster-card h2 {
+    font-size: 64px;
   }
 }
