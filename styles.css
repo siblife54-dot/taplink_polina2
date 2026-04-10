@@ -64,6 +64,7 @@ h4 {
     linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.06)),
     #07070d;
   box-shadow: 0 18px 28px rgba(0, 0, 0, 0.55), 0 0 32px rgba(255, 6, 151, 0.22);
+  overflow: hidden;
 }
 
 .poster-badges {
@@ -89,18 +90,12 @@ h4 {
   color: #d6d7de;
 }
 
-.hero-layout {
-  margin: 12px 0 14px;
-  display: block;
-}
-
 .hero-image {
   width: 100%;
-  border-radius: 14px;
-  display: block;
-  border: 1px solid rgba(255, 255, 255, 0.15);
   height: auto;
-  object-fit: contain;
+  display: block;
+  margin: 12px 0 14px;
+  border-radius: 20px;
 }
 
 .btn {
