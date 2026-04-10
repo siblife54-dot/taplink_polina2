@@ -206,37 +206,41 @@ h3 {
     inset 0 0 20px rgba(255, 54, 178, 0.12);
 }
 
-.clipboard {
-  background: linear-gradient(180deg, #ff57ba, #e13ea6);
-  border-radius: 20px;
-  padding: 18px 14px 14px;
-  position: relative;
-}
-
-.clip {
-  width: 80px;
-  height: 12px;
-  border-radius: 8px;
-  background: #d6d6d6;
-  margin: 0 auto 14px;
-  border: 2px solid #8c8c8c;
-}
-
-.clipboard ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.results-grid {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
 }
 
-.clipboard li {
-  background: #f7f7fa;
-  color: #1b1b22;
-  border-radius: 9px;
-  padding: 12px;
-  font-weight: 500;
-  font-size: 14px;
+.result-card {
+  min-height: 120px;
+  border-radius: 18px;
+  padding: 14px 12px;
+  background: linear-gradient(165deg, rgba(24, 24, 34, 0.95) 0%, rgba(8, 8, 15, 0.92) 100%);
+  border: 1px solid rgba(255, 92, 188, 0.62);
+  box-shadow:
+    0 0 0 1px rgba(255, 11, 157, 0.12),
+    0 0 22px rgba(255, 36, 170, 0.2),
+    0 10px 18px rgba(0, 0, 0, 0.4),
+    inset 0 0 20px rgba(255, 26, 161, 0.1);
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.result-emoji {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.result-card p {
+  margin: 0;
+  color: #f7f0fa;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.25;
 }
 
 .pricing h3,
