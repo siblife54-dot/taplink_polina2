@@ -74,7 +74,6 @@ h4 {
   border: 1px solid rgba(255, 100, 180, 0.5);
   border-radius: 12px;
   padding: 8px;
-  text-align: center;
 }
 
 .poster-badges b {
@@ -96,7 +95,7 @@ h4 {
 }
 
 .hero .btn {
-  margin-top: 8px;
+  margin-top: 20px;
 }
 
 .btn {
