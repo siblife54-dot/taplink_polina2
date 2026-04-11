@@ -1,8 +1,8 @@
 const audienceGrid = document.querySelector(".audience-grid");
 const pricingLinks = {
-  solo: "#",
-  club: "#",
-  vip: "#",
+  solo: "https://t.me/fs_vipp_bot",
+  club: "https://t.me/fs_teams_bot",
+  vip: "https://t.me/fs_vipp_bot",
 };
 
 if (audienceGrid) {
