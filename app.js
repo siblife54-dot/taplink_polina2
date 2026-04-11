@@ -1,4 +1,9 @@
 const audienceGrid = document.querySelector(".audience-grid");
+const pricingLinks = {
+  solo: "#",
+  club: "#",
+  vip: "#",
+};
 
 if (audienceGrid) {
   const revealAudience = new IntersectionObserver(
@@ -53,6 +58,17 @@ if (transformationCards.length && lightbox && lightboxImage && lightboxClose) {
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape" && lightbox.classList.contains("is-open")) {
       closeLightbox();
+    }
+  });
+}
+
+const pricingButtons = document.querySelectorAll("[data-pricing-link]");
+
+if (pricingButtons.length) {
+  pricingButtons.forEach((button) => {
+    const linkType = button.dataset.pricingLink;
+    if (linkType && pricingLinks[linkType]) {
+      button.href = pricingLinks[linkType];
     }
   });
 }
