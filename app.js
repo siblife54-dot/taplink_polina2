@@ -1,25 +1,8 @@
-const audienceGrid = document.querySelector(".audience-grid");
 const pricingLinks = {
   solo: "https://t.me/fs_solo_bot",
   club: "https://t.me/fs_teams_bot",
   vip: "https://t.me/fs_vipp_bot",
 };
-
-if (audienceGrid) {
-  const revealAudience = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("in-view");
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.25 },
-  );
-
-  revealAudience.observe(audienceGrid);
-}
 
 const transformationCards = document.querySelectorAll(".transformation-card img");
 const lightbox = document.getElementById("transformation-lightbox");
