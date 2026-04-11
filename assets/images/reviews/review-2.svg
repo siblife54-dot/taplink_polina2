@@ -1,0 +1,24 @@
+<svg width="720" height="1280" viewBox="0 0 720 1280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="1280" rx="40" fill="#0E1621"/>
+  <rect x="32" y="32" width="656" height="1216" rx="30" fill="#182533"/>
+  <text x="70" y="110" fill="#D7E3F4" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="600">Отзывы участниц • сегодня</text>
+
+  <rect x="148" y="170" width="500" height="220" rx="26" fill="#2B5278"/>
+  <text x="176" y="228" fill="#F0F7FF" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="600">Я в шоке от лица в зеркале</text>
+  <text x="176" y="278" fill="#DCEBFF" font-family="Inter, Arial, sans-serif" font-size="30">Утром больше нет отёка,</text>
+  <text x="176" y="322" fill="#DCEBFF" font-family="Inter, Arial, sans-serif" font-size="30">скулы стали чётче буквально за неделю.</text>
+
+  <rect x="72" y="428" width="500" height="214" rx="26" fill="#273A4E"/>
+  <text x="100" y="486" fill="#EAF3FF" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="600">Тренировки короткие, но мощные</text>
+  <text x="100" y="536" fill="#C8D7EA" font-family="Inter, Arial, sans-serif" font-size="30">15–20 минут дома и уже есть</text>
+  <text x="100" y="580" fill="#C8D7EA" font-family="Inter, Arial, sans-serif" font-size="30">тонус и энергия 🔥</text>
+
+  <rect x="148" y="678" width="500" height="204" rx="26" fill="#2B5278"/>
+  <text x="176" y="736" fill="#F0F7FF" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="600">Очень помог протокол воды</text>
+  <text x="176" y="786" fill="#DCEBFF" font-family="Inter, Arial, sans-serif" font-size="30">Живот заметно подсдулся,</text>
+  <text x="176" y="830" fill="#DCEBFF" font-family="Inter, Arial, sans-serif" font-size="30">брюки снова сидят свободно ✨</text>
+
+  <rect x="72" y="914" width="470" height="186" rx="26" fill="#273A4E"/>
+  <text x="100" y="972" fill="#EAF3FF" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="600">Самое ценное — нет чувства</text>
+  <text x="100" y="1020" fill="#C8D7EA" font-family="Inter, Arial, sans-serif" font-size="30">что ты на диете. Всё реально!</text>
+</svg>
