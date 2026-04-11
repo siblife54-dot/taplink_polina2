@@ -131,6 +131,10 @@ h4 {
   margin-top: 64px;
 }
 
+.club-benefits {
+  margin-top: 92px;
+}
+
 h3 {
   font-size: 52px;
   margin-bottom: 16px;
@@ -270,6 +274,7 @@ h3 {
 }
 
 .benefits-timeline {
+  --timeline-line-center: 10px;
   width: min(100%, 400px);
   margin: 0 auto;
   position: relative;
@@ -279,10 +284,10 @@ h3 {
 .benefits-timeline::before {
   content: "";
   position: absolute;
-  left: 9px;
+  left: calc(var(--timeline-line-center) - 1px);
   top: 6px;
   bottom: 6px;
-  width: 3px;
+  width: 2px;
   border-radius: 999px;
   background: linear-gradient(180deg, #ff9ee1 0%, #ff4fc0 42%, #ff0b9d 100%);
   box-shadow:
@@ -301,8 +306,9 @@ h3 {
 
 .timeline-dot {
   position: absolute;
-  left: -25px;
+  left: var(--timeline-line-center);
   top: 10px;
+  transform: translateX(-50%);
   width: 12px;
   height: 12px;
   border-radius: 50%;
