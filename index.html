@@ -186,13 +186,6 @@
                 loading="lazy"
               />
             </article>
-            <article class="transformation-card">
-              <img
-                src="assets/images/results/result3.jpg"
-                alt="Трансформация участницы до и после — итог за период участия"
-                loading="lazy"
-              />
-            </article>
           </div>
         </section>
         <section class="pricing" id="pricing">
@@ -235,6 +228,20 @@
           <a href="#" class="btn btn-primary">Связаться</a>
         </section>
       </main>
+    </div>
+
+    <div class="image-lightbox" id="transformation-lightbox" aria-hidden="true">
+      <button
+        class="lightbox-close"
+        id="transformation-lightbox-close"
+        type="button"
+        aria-label="Закрыть увеличенное изображение"
+      >
+        ×
+      </button>
+      <div class="lightbox-content" role="dialog" aria-modal="true" aria-label="Увеличенное фото результата">
+        <img id="lightbox-image" src="" alt="" />
+      </div>
     </div>
 
     <script src="app.js"></script>
