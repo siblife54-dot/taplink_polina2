@@ -565,52 +565,96 @@ h3 {
   text-align: left;
 }
 
+.pricing-grid {
+  display: grid;
+  gap: 16px;
+}
+
 .price-card {
-  border-radius: 20px;
-  padding: 18px 14px;
-  margin-bottom: 14px;
+  position: relative;
+  border-radius: 24px;
+  padding: 20px 16px 18px;
+  background:
+    radial-gradient(120% 120% at 100% 0%, rgba(255, 74, 182, 0.12) 0%, rgba(255, 74, 182, 0) 52%),
+    linear-gradient(165deg, rgba(20, 20, 32, 0.96) 0%, rgba(8, 8, 14, 0.96) 100%);
+  border: 1px solid rgba(255, 112, 203, 0.5);
+  box-shadow:
+    0 0 0 1px rgba(255, 11, 157, 0.1),
+    0 0 24px rgba(255, 57, 171, 0.15),
+    0 12px 28px rgba(0, 0, 0, 0.42),
+    inset 0 1px 0 rgba(255, 181, 228, 0.08);
 }
 
-.dark-card {
-  background: #2a2b30;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+.price-card-popular {
+  border-color: rgba(255, 153, 220, 0.88);
+  box-shadow:
+    0 0 0 1px rgba(255, 113, 200, 0.24),
+    0 0 30px rgba(255, 88, 186, 0.28),
+    0 14px 30px rgba(0, 0, 0, 0.48),
+    inset 0 1px 0 rgba(255, 208, 238, 0.16);
 }
 
-.light-card {
-  background: #f2f2f2;
-  color: #18191f;
+.price-badge {
+  margin: 0 0 10px;
+  display: inline-flex;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  color: #2f2610;
+  background: linear-gradient(180deg, #fff2cf 0%, #e9bc61 100%);
+  border-radius: 999px;
+  padding: 7px 10px;
+  box-shadow: 0 6px 14px rgba(241, 196, 102, 0.35);
 }
 
 .price-card h4 {
-  font-size: 52px;
-  margin-bottom: 10px;
+  font-size: clamp(36px, 9vw, 46px);
+  line-height: 0.95;
+  margin-bottom: 6px;
 }
 
-.price-card ol {
-  margin: 0 0 12px 18px;
-  padding: 0;
+.price-subtitle {
+  margin: 0 0 10px;
+  color: rgba(244, 232, 255, 0.78);
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.35;
 }
 
 .old-price {
-  margin: 0;
+  margin: 8px 0 0;
   text-decoration: line-through;
-  opacity: 0.5;
-  text-align: center;
+  text-decoration-thickness: 1.5px;
+  text-decoration-color: rgba(255, 222, 242, 0.62);
+  opacity: 0.7;
+  font-size: 16px;
 }
 
 .new-price {
-  margin: 4px 0 14px;
-  text-align: center;
-  font-size: 40px;
+  margin: 2px 0 14px;
+  font-size: 52px;
+  line-height: 0.9;
   font-family: Oswald, sans-serif;
+  color: #fff6dc;
+  text-shadow: 0 0 16px rgba(255, 202, 121, 0.32);
 }
 
-.btn-pink {
-  margin-bottom: 8px;
-  color: #fff;
-  background: linear-gradient(100deg, #f5bde2, #ff3fb0);
+.price-features {
+  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.price-features li {
+  color: rgba(248, 238, 255, 0.92);
+  font-size: 14px;
+  line-height: 1.42;
+}
+
+.pricing-btn {
+  margin-top: auto;
 }
 
 .care .btn {
