@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <title>Доступ к программе</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #050509;
+        --text: #ffffff;
+        --muted: #d8d5df;
+        --pink: #ff0b9d;
+        --card-bg: linear-gradient(160deg, rgba(20, 14, 30, 0.97), rgba(8, 8, 14, 0.98));
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100dvh;
+        display: grid;
+        place-items: center;
+        padding: 20px;
+        background:
+          radial-gradient(circle at 20% 0%, rgba(255, 11, 157, 0.16), transparent 45%),
+          radial-gradient(circle at 80% 100%, rgba(255, 128, 210, 0.1), transparent 50%),
+          var(--bg);
+        color: var(--text);
+        font-family: Inter, system-ui, -apple-system, sans-serif;
+      }
+
+      .card {
+        width: min(100%, 430px);
+        border-radius: 28px;
+        padding: 34px 22px 30px;
+        background: var(--card-bg);
+        border: 1px solid rgba(255, 125, 207, 0.58);
+        box-shadow:
+          0 0 0 1px rgba(255, 74, 182, 0.12),
+          0 0 24px rgba(255, 37, 169, 0.26),
+          inset 0 0 24px rgba(255, 105, 196, 0.08),
+          0 16px 34px rgba(0, 0, 0, 0.5);
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+        font-family: Oswald, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        line-height: 0.98;
+        font-size: clamp(34px, 11vw, 52px);
+      }
+
+      .lead {
+        margin: 18px 0 0;
+        font-size: 20px;
+        line-height: 1.28;
+      }
+
+      .description {
+        margin: 16px 0 0;
+        font-size: 16px;
+        line-height: 1.45;
+        color: var(--muted);
+      }
+
+      .cta {
+        display: inline-block;
+        width: 80%;
+        margin-top: 26px;
+        border-radius: 999px;
+        padding: 16px 14px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.7px;
+        color: #282415;
+        background: linear-gradient(180deg, #fff1c9 0%, #f4cf77 100%);
+        box-shadow: 0 8px 20px rgba(255, 220, 122, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Оплата прошла успешно</h1>
+      <p class="lead">Вы подключились к тарифу<br />"Самостоятельная"</p>
+      <p class="description">
+        Теперь нажмите кнопку ниже, чтобы перейти в канал с материалами программы.
+      </p>
+      <a class="cta" href="PUT_LINK_SOLO">Перейти в канал</a>
+    </main>
+  </body>
+</html>
