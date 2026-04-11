@@ -224,13 +224,11 @@ h4 {
   scroll-snap-align: start;
   border-radius: 20px;
   padding: 10px;
-  border: 2px solid transparent;
-  background:
-    linear-gradient(160deg, rgba(16, 16, 24, 0.98) 0%, rgba(5, 5, 9, 0.98) 100%) padding-box,
-    linear-gradient(135deg, #ffd700, #d4af37, #f7e27e, #d4af37) border-box;
+  background: linear-gradient(160deg, rgba(16, 16, 24, 0.98) 0%, rgba(5, 5, 9, 0.98) 100%);
+  border: 1px solid rgba(255, 119, 202, 0.58);
   box-shadow:
-    0 0 10px rgba(212, 175, 55, 0.4),
-    0 0 20px rgba(212, 175, 55, 0.22),
+    0 0 0 1px rgba(255, 11, 157, 0.12),
+    0 0 24px rgba(255, 39, 170, 0.22),
     0 12px 28px rgba(0, 0, 0, 0.4);
 }
 
