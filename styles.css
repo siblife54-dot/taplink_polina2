@@ -124,6 +124,7 @@ h4 {
 .club-benefits,
 .final-result,
 .reviews,
+.transformations,
 .pricing,
 .care {
   margin-top: 30px;
@@ -204,6 +205,42 @@ h4 {
 .reviews h3 {
   margin-bottom: 18px;
   text-align: left;
+}
+
+.transformations {
+  margin-top: 56px;
+}
+
+.transformations h3 {
+  margin-bottom: 22px;
+  text-align: left;
+}
+
+.transformations-gallery {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 22px;
+}
+
+.transformation-card {
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 8px;
+  background: linear-gradient(160deg, rgba(16, 16, 24, 0.98) 0%, rgba(5, 5, 9, 0.98) 100%);
+  border: 1px solid rgba(255, 119, 202, 0.5);
+  box-shadow:
+    0 0 0 1px rgba(255, 11, 157, 0.1),
+    0 0 20px rgba(255, 39, 170, 0.18),
+    0 12px 28px rgba(0, 0, 0, 0.42);
+}
+
+.transformation-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+  background: #090b13;
+  object-fit: contain;
 }
 
 .reviews-gallery {
@@ -547,6 +584,10 @@ h3 {
   .reviews-gallery {
     grid-auto-columns: minmax(230px, 88%);
     gap: 12px;
+  }
+
+  .transformations-gallery {
+    gap: 18px;
   }
 
   .timeline-content h4 {
